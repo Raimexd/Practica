@@ -21,14 +21,14 @@ namespace Practica
 
             while (true)
             {
-                //Console.WriteLine("Выберите тип транспорта для вывода:");
-                //Console.WriteLine("1. Весь транспорт");
-                //Console.WriteLine("2. Лодки");
-                //Console.WriteLine("3. Машины");
-                //Console.WriteLine("4. Мотоциклы");
-                //Console.WriteLine("5. Велосипеды");
-                //Console.WriteLine("6. Самокаты");
-                //Console.WriteLine("0. Выйти");
+                Console.WriteLine("Выберите тип транспорта для вывода:");
+                Console.WriteLine("1. Весь транспорт");
+                Console.WriteLine("2. Лодки");
+                Console.WriteLine("3. Машины");
+                Console.WriteLine("4. Мотоциклы");
+                Console.WriteLine("5. Велосипеды");
+                Console.WriteLine("6. Самокаты");
+                Console.WriteLine("0. Выйти");
 
                 int choice = int.Parse(Console.ReadLine());
 
