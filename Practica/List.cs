@@ -21,90 +21,90 @@ namespace Practica
 
             while (true)
             {
-                Console.WriteLine("Выберите тип транспорта для вывода:");
-                Console.WriteLine("1. Весь транспорт");
-                Console.WriteLine("2. Лодки");
-                Console.WriteLine("3. Машины");
-                Console.WriteLine("4. Мотоциклы");
-                Console.WriteLine("5. Велосипеды");
-                Console.WriteLine("6. Самокаты");
-                Console.WriteLine("0. Выйти");
+                //Console.WriteLine("Выберите тип транспорта для вывода:");
+                //Console.WriteLine("1. Весь транспорт");
+                //Console.WriteLine("2. Лодки");
+                //Console.WriteLine("3. Машины");
+                //Console.WriteLine("4. Мотоциклы");
+                //Console.WriteLine("5. Велосипеды");
+                //Console.WriteLine("6. Самокаты");
+                //Console.WriteLine("0. Выйти");
 
                 int choice = int.Parse(Console.ReadLine());
 
-                //switch (choice)
-                //{
-                //    case 1:
-                //        Console.WriteLine("Весь транспорт:");
-                //        foreach (var transport in transports)
-                //        {
-                //            transport.AboutTransport();
-                //        }
-                //        break;
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("Весь транспорт:");
+                        foreach (var transport in transports)
+                        {
+                            transport.AboutTransport();
+                        }
+                        break;
 
-                //    case 2:
-                //        Console.WriteLine("Наши Лодки:");
-                //        foreach (var transport in transports)
-                //        {
-                //            if (transport is Boat)
-                //            {
-                //                transport.AboutTransport();
-                //            }
-                //        }
-                //        break;
+                    case 2:
+                        Console.WriteLine("Наши Лодки:");
+                        foreach (var transport in transports)
+                        {
+                            if (transport is Boat)
+                            {
+                                transport.AboutTransport();
+                            }
+                        }
+                        break;
 
-                //    case 3:
-                //        Console.WriteLine("Наши Машины:");
-                //        foreach (var transport in transports)
-                //        {
-                //            if (transport is Car)
-                //            {
-                //                transport.AboutTransport();
-                //            }
-                //        }
-                //        break;
+                    case 3:
+                        Console.WriteLine("Наши Машины:");
+                        foreach (var transport in transports)
+                        {
+                            if (transport is Car)
+                            {
+                                transport.AboutTransport();
+                            }
+                        }
+                        break;
 
-                //    case 4:
-                //        Console.WriteLine("Наши Мотоциклы:");
-                //        foreach (var transport in transports)
-                //        {
-                //            if (transport is Bike)
-                //            {
-                //                transport.AboutTransport();
-                //            }
-                //        }
-                //        break;
+                    case 4:
+                        Console.WriteLine("Наши Мотоциклы:");
+                        foreach (var transport in transports)
+                        {
+                            if (transport is Bike)
+                            {
+                                transport.AboutTransport();
+                            }
+                        }
+                        break;
 
-                //    case 5:
-                //        Console.WriteLine("Наши Велосипеды:");
-                //        foreach (var transport in transports)
-                //        {
-                //            if (transport is Bycycle)
-                //            {
-                //                transport.AboutTransport();
-                //            }
-                //        }
-                //        break;
+                    case 5:
+                        Console.WriteLine("Наши Велосипеды:");
+                        foreach (var transport in transports)
+                        {
+                            if (transport is Bycycle)
+                            {
+                                transport.AboutTransport();
+                            }
+                        }
+                        break;
 
-                //    case 6:
-                //        Console.WriteLine("Наши Самокаты:");
-                //        foreach (var transport in transports)
-                //        {
-                //            if (transport is Scooter)
-                //            {
-                //                transport.AboutTransport();
-                //            }
-                //        }
-                //        break;
+                    case 6:
+                        Console.WriteLine("Наши Самокаты:");
+                        foreach (var transport in transports)
+                        {
+                            if (transport is Scooter)
+                            {
+                                transport.AboutTransport();
+                            }
+                        }
+                        break;
 
-                //    case 0:
-                //        Environment.Exit(0);
-                //        break;
+                    case 0:
+                        Environment.Exit(0);
+                        break;
 
-                //    default:
-                //        Console.WriteLine("Выбор не распознан. Пожалуйста, выберите снова.");
-                //        break;
-                //}
+                    default:
+                        Console.WriteLine("Выбор не распознан. Пожалуйста, выберите снова.");
+                        break;
+                }
             }
         }
     }
