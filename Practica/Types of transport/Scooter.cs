@@ -10,11 +10,17 @@ namespace Practica
     {
         public override void AboutTransport()
         {
-            Console.WriteLine($"Скорость : {speed}; Цвет : {color}; Кол-во колес : {Wheels}; Модель : {model}; Арендован на этот момент: {isArended}");
+            Console.WriteLine($"Скорость : {speed}; Цвет : {color}; Кол-во колес : {Wheels}; Модель : {model}; Арендован на этот момент: {IsArended}");
         }
-        public Scooter(int speed, string color, string CategoryofRights, int Wheels, bool isArended, string model)
+        public Scooter(int speed, string color, string CategoryofRights, int Wheels, bool rent, string model)
         {
-
+            this.speed = speed;
+            this.color = color;
+            this.CategoryofRights = CategoryofRights;
+            this.Motor = Motor;
+            this.Wheels = Wheels;
+            this.IsArended = rent;
+            this.model = model;
         }
     }
 }

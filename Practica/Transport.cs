@@ -11,13 +11,14 @@ abstract class Transport
     private string Model;
     private bool rent;
     private int wheel;
-    public string Motor { get { return motor; } set { Motor = value; } }
-    public string color { get { return Color; } set { color = value; } }
-    public string CategoryofRights { get {return rights; } set { CategoryofRights = value; } }
-    public string model { get { return Model; } set { model = value; } }
-    public int speed { get { return Speed; } set { speed = value; } }
-    public bool isArended { get {return rent; } set {isArended = value; } }
-    public int Wheels { get {return wheel; } set {Wheels = value; } }
+    public string Motor { get { return motor; } set { motor = value; } }
+    public string color { get { return Color; } set { Color = value; } }
+    public string CategoryofRights { get { return rights; } set { rights = value; } }
+    public string model { get { return Model; } set { Model = value; } }
+    public int speed { get { return Speed; } set { Speed = value; } }
+    public bool IsArended { get { return rent; } set { rent = value; } }
+    public int Wheels { get { return wheel; } set { wheel = value; } }
+
 
     public abstract void AboutTransport();
 }
